@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green API Test UI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Green API Test UI</h1>
+  <div class="container">
+    <div class="left">
+      <input id="idInstance" type="text" placeholder="idInstance">
+      <input id="apiTokenInstance" type="text" placeholder="ApiTokenInstance">
+      
+      <button onclick="getSettings()">getSettings</button>
+      <button onclick="getStateInstance()">getStateInstance</button>
+      
+      <input id="chatIdMessage" type="text" placeholder="77777254567">
+      <textarea id="messageText" rows="2" placeholder="Hello World!!"></textarea>
+      <button onclick="sendMessage()">sendMessage</button>
+      
+      <input id="chatIdFile" type="text" placeholder="77777254567">
+      <input id="fileUrl" type="text" placeholder="https://my.site.com/my/horse.png">
+      <input id="caption" type="text" placeholder="Подпись к файлу (необязательно)">
+      <button onclick="sendFileByUrl()">sendFileByUrl</button>
+    </div>
+    
+    <div class="right-container">
+      <div class="right-title">Ответ:</div>
+      <div id="right" class="right">
+        {
+          "idMessage": "3EB0C7C7D09787C7C7C90"
+        }
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
