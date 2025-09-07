@@ -1,5 +1,4 @@
 function formatResponse(data) {
-    // Форматируем так, чтобы всегда были скобки
     if (typeof data === "object") {
         const json = JSON.stringify(data, null, '\t');
         return `{\n${json.slice(1, -1)}\n}`;
