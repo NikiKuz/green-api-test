@@ -17,7 +17,7 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/username/green-api-test.git
+   git clone https://github.com/NikiKuz/green-api-test.git
    cd green-api-test
    ```
 
